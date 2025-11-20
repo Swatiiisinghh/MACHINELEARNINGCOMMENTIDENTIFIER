@@ -1,23 +1,73 @@
-# Toxic Comment Classification - Multi Label - NLP
+# Toxic Comment Classification – Multi-Label NLP
 
-**Complete Video Tutorial:** https://youtu.be/lbmzacBDOew
+## 📌 Overview
+In this project, I built a **multi-label text classification model** to detect toxic behavior in online comments. The dataset contains Wikipedia comments that have been manually labeled by human raters. My goal was to predict the probability of each toxicity category for every input comment.
 
-# Dataset Information
+### 🎥 Tutorial I Followed
+https://youtu.be/lbmzacBDOew
 
-The threat of abuse and harassment online means that many people stop expressing themselves and give up on seeking different opinions. Platforms struggle to effectively facilitate conversations, leading many communities to limit or completely shut down user comments.
+---
 
-The dataset consists of large number of Wikipedia comments which have been labeled by human raters for toxic behavior. The types of toxicity are:
+## 🧠 Problem Background
+Online communities often deal with abusive or harmful comments that discourage users from expressing their opinions. Many platforms struggle to moderate such content effectively.
 
-<li>toxic
-<li>severe_toxic
-<li>obscene
-<li>threat
-<li>insult
-<li>identity_hate
+To understand how multi-label NLP systems work, I implemented a toxicity detection model that can classify comments into multiple categories at once.
 
-Create a model which predicts a probability of each type of toxicity for each comment.
+---
 
-**Download link:** https://www.kaggle.com/competitions/jigsaw-toxic-comment-classification-challenge/data?select=train.csv.zip
+## 🗂️ Dataset Information
+I used the dataset from the **Jigsaw Toxic Comment Classification Challenge** on Kaggle. Each comment can belong to more than one toxicity category, which makes this a **multi-label classification task**.
+
+The labels include:
+
+- toxic  
+- severe_toxic  
+- obscene  
+- threat  
+- insult  
+- identity_hate  
+
+📥 Dataset link:  
+https://www.kaggle.com/competitions/jigsaw-toxic-comment-classification-challenge/data?select=train.csv.zip
+
+---
+
+## 🛠️ Libraries Used
+- pandas  
+- matplotlib  
+- seaborn  
+- scikit-learn  
+
+---
+
+## 🤖 Algorithms Implemented
+I experimented with the following models:
+
+- **Logistic Regression** (One-vs-Rest scheme)
+- **Naive Bayes** (MultinomialNB)
+
+---
+
+## 📊 Model Performance
+The results I achieved:
+
+- **ROC_AUC:** 0.9794  
+- **Accuracy:** 0.9187  
+
+These metrics show that the model performs well in identifying toxic vs non-toxic behavior across different labels.
+
+---
+
+## 📝 What I Learned
+Working on this project helped me understand:
+
+- multi-label text classification  
+- NLP preprocessing techniques  
+- applying classical ML models to large text datasets  
+- evaluating model performance using ROC_AUC and accuracy  
+
+This project gave me hands-on experience in building practical NLP systems that can support safer online interactions.
+
 
 # Libraries
 
